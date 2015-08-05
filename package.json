@@ -1,0 +1,32 @@
+{
+  "name": "brink-sass",
+  "version": "0.1.17",
+  "description": "sass functional implementation by brink technology co.",
+  "main": "./index.sass",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd kss/ && browser-sync start --server --files '**/*.html, **/*.js, **/*.css' --startPath /styleguide/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/findthebrink/brink-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "modular"
+  ],
+  "author": "Derek Moore (repos@findthebrink.com)",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "normalize.scss": "^0.1.0"
+  },
+  "devDependencies": {
+    "node-minify": "^1.1.0",
+    "watch": "^0.16.0"
+  }
+}
