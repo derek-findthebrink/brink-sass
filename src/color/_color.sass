@@ -1,6 +1,13 @@
 $color-percent-default: 30% !default
 $color-denom-default: 10 !default
 
+// Color Contrast
+//
+// produces contrasting colors
+//
+// Styleguide Color.color-contrast
+
+
 // @mixin appropriate-colors
 //
 // creates sets color and background color based on relationship set in parameters
@@ -8,7 +15,7 @@ $color-denom-default: 10 !default
 // $color	- the color to be used
 // $percent	- the percent to mix with the contrast (either white or black). defaults to 30%
 // 
-// Styleguide Color.appropriate-colors
+// Styleguide Color.color-contrast.appropriate-colors
 
 @mixin appropriate-colors( $color, $percent: $color-percent-default)
 	background-color: $color
@@ -24,7 +31,7 @@ $color-denom-default: 10 !default
 // $color	- color to be used
 // $percent	- percent
 // 
-// Styleguide Color.ac
+// Styleguide Color.color-contrast.ac
 
 @mixin ac($color, $percent: $color-percent-default)
 	@include appropriate-colors($color, $percent)

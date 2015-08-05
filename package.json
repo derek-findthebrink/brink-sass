@@ -8,7 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "cd kss/ && browser-sync start --server --files '**/*.html, **/*.js, **/*.css' --startPath /styleguide/index.html"
+    "dev": "browser-sync start --server --files '**/*.html, **/*.js, **/*.css' --reload-delay 1000 --startPath /kss/styleguide/index.html",
+    "kss": "watch 'npm run build' src tests",
+    "build": "kss-node -t kss/styleguide-template --js ../../node_modules/jquery/dist/jquery.min.js --js ../bundle.js --css ../index.css --source src --source kss --destination kss/styleguide/",
+    "css": "sass -wc kss/index.sass:kss/index.css"
   },
   "repository": {
     "type": "git",
@@ -23,7 +26,8 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "^2.1.4",
-    "normalize.scss": "^0.1.0"
+    "normalize.scss": "^0.1.0",
+    "requirejs": "^2.1.20"
   },
   "devDependencies": {
     "node-minify": "^1.1.0",

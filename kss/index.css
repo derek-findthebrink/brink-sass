@@ -553,6 +553,8 @@ form {
     position: static;
     overflow: auto; } }
 .kss-modifier__example .bubble {
+  -webkit-box-shadow: 3px 3px 20px #7d8d99;
+  -moz-box-shadow: 3px 3px 20px #7d8d99;
   box-shadow: 3px 3px 20px #7d8d99;
   background-color: white;
   color: #4d4d4d;
@@ -566,6 +568,8 @@ form {
   .kss-modifier__example .bubble .glyph {
     margin: 0 auto; }
 .kss-modifier__example .bubble-round {
+  -webkit-box-shadow: 3px 3px 20px #7d8d99;
+  -moz-box-shadow: 3px 3px 20px #7d8d99;
   box-shadow: 3px 3px 20px #7d8d99;
   background-color: white;
   color: #4d4d4d;
@@ -775,13 +779,20 @@ form {
   .kss-modifier__example .form-pretty input:hover, .kss-modifier__example .form-pretty textarea:hover {
     background-color: #bcd4e6; }
   .kss-modifier__example .form-pretty input[type='submit'] {
-    border-color: #42657F;
-    background: #42657F;
-    color: #D1EBFF;
-    font-family: "ff-enzo-web", "Raleway", sans-serif; }
+    -webkit-transition: all, 0.5s;
+    -moz-transition: all, 0.5s;
+    transition: all, 0.5s;
+    border: 1px solid rgba(66, 101, 127, 0.2);
+    border-radius: 3px;
+    background-color: cm(#42657F, 8);
+    background-image: -webkit-linear-gradient(top, cm(#42657F, 8), #42657F);
+    background-image: linear-gradient(to bottom,cm(#42657F, 8), #42657F);
+    padding: 0.5em;
+    color: #D1EBFF; }
     .kss-modifier__example .form-pretty input[type='submit']:hover {
-      background-color: #f1f9ff;
-      color: #42657F; }
+      border-color: #42657F; }
+    .kss-modifier__example .form-pretty input[type='submit']:hover {
+      color: cm(#D1EBFF, 10); }
 .kss-modifier__example .form-send {
   max-height: 5em;
   background-color: #D1EBFF; }
@@ -809,29 +820,18 @@ form {
   .kss-modifier__example .form-error .message {
     background-color: #ff6850;
     color: #4d1f18; }
-.kss-modifier__example .button-cool {
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
-  .kss-modifier__example .button-cool:before, .kss-modifier__example .button-cool:after {
-    content: "";
-    z-index: -1;
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    -moz-border-radius: 100px/10px;
-    border-radius: 100px/10px; }
-  .kss-modifier__example .button-cool:after {
-    right: 10px;
-    left: auto;
-    -webkit-transform: skew(8deg) rotate(3deg);
-    -moz-transform: skew(8deg) rotate(3deg);
-    -ms-transform: skew(8deg) rotate(3deg);
-    -o-transform: skew(8deg) rotate(3deg);
-    transform: skew(8deg) rotate(3deg); }
+.kss-modifier__example button {
+  position: relative;
+  font-family: "ff-enzo-web", "Raleway", sans-serif;
+  box-shadow: 0 1px 4px #d1ebff, 0 0 40px #d1ebff inset; }
+.kss-modifier__example .button-themed {
+  border: 1px solid rgba(66, 101, 127, 0.2);
+  border-radius: 3px;
+  background-color: cm(#D1EBFF, 8);
+  background-image: -webkit-linear-gradient(top, cm(#D1EBFF, 8), #D1EBFF);
+  background-image: linear-gradient(to bottom,cm(#D1EBFF, 8), #D1EBFF);
+  padding: 0.5em; }
+  .kss-modifier__example .button-themed:hover {
+    border-color: #42657F; }
 
 /*# sourceMappingURL=index.css.map */
