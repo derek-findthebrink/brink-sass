@@ -1,3 +1,19 @@
+/*
+ * BRINK SASS
+ *
+ * Author: Derek Moore <repos@findthebrink.com>
+ * License: MIT
+ * Description: sass framework for rapid website development
+ * Powered by: 
+ *		SASS
+ *		Bourbon
+ *		Bourbon Neat
+ * 		Normalize.css (normalize.scss)
+ *
+ *
+ *
+ *
+ */
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -486,72 +502,26 @@ form {
   form .form-field {
     display: block; }
 
-.glyph {
-  display: block;
-  width: 2.5em;
-  height: 2.5em;
+.kss-modifier__example .galaxy1 main, .kss-modifier__example .galaxy2 main, .kss-modifier__example .ship1 main, .kss-modifier__example .ship2 main {
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 1em; }
-
-.glyph-email {
-  background-image: url("icons/brink-icons_email.svg"); }
-
-.glyph-gps {
-  background-image: url("icons/brink-icons_gps.svg"); }
-
-.glyph-oil {
-  background-image: url("icons/brink-icons_oil.svg"); }
-
-.glyph-phone {
-  background-image: url("icons/brink-icons_phone.svg"); }
-
-.glyph-recruiting {
-  background-image: url("icons/brink-icons_recruiting.svg"); }
-
-.glyph-reputation {
-  background-image: url("icons/brink-icons_reputation.svg"); }
-
-.glyph-trends {
-  background-image: url("icons/brink-icons_trends.svg"); }
-
-.glyph-uptime {
-  background-image: url("icons/brink-icons_uptime.svg"); }
-
-.glyph-business-cards {
-  background-image: url("icons/brink-icons_business-cards.svg"); }
-
-.glyph-devices {
-  background-image: url("icons/brink-icons_devices.svg"); }
-
-.glyph-domain {
-  background-image: url("icons/brink-icons_domain.svg"); }
-
-.glyph-graphics {
-  background-image: url("icons/brink-icons_graphics.svg"); }
-
-.glyph-hardware {
-  background-image: url("icons/brink-icons_hardware.svg"); }
-
-.glyph-online-visibility {
-  background-image: url("icons/brink-icons_online-visibility.svg"); }
-
-.glyph-brand {
-  background-image: url("icons/brink-icons_brand.svg"); }
-
-.glyph-size-large {
-  width: 8em;
-  height: 8em; }
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .kss-sidebar {
   position: fixed;
   max-height: 100vh;
-  overflow: scroll; }
+  overflow: hidden; }
 
 @media (max-width: 768px) {
   .kss-sidebar {
     position: static;
     overflow: auto; } }
+#kss-node .kss-section {
+  max-width: none !important; }
+
 .kss-modifier__example .bubble {
   -webkit-box-shadow: 3px 3px 20px #7d8d99;
   -moz-box-shadow: 3px 3px 20px #7d8d99;
@@ -833,22 +803,22 @@ form {
   padding: 0.5em; }
   .kss-modifier__example .button-themed:hover {
     border-color: #42657F; }
-.kss-modifier__example .grid-spaced {
+.kss-modifier__example .grid {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
-  .kss-modifier__example .grid-spaced::after {
+  .kss-modifier__example .grid::after {
     clear: both;
     content: "";
     display: table; }
-  .kss-modifier__example .grid-spaced > li {
+  .kss-modifier__example .grid > li {
     float: left;
     display: block;
     margin-right: 10.1484%;
     width: 26.56773%; }
-    .kss-modifier__example .grid-spaced > li:last-child {
+    .kss-modifier__example .grid > li:last-child {
       margin-right: 0; }
-    .kss-modifier__example .grid-spaced > li:nth-child(3n) {
+    .kss-modifier__example .grid > li:nth-child(3n) {
       margin-right: 0; }
 .kss-modifier__example .grid-table {
   max-width: 100%;
@@ -884,5 +854,78 @@ form {
       display: table-cell;
       width: 8.33333%;
       padding: 0; }
+.kss-modifier__example .mq-layout1 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .kss-modifier__example .mq-layout1::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .kss-modifier__example .mq-layout1 > li {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 12.64237%; }
+    .kss-modifier__example .mq-layout1 > li:last-child {
+      margin-right: 0; }
+    .kss-modifier__example .mq-layout1 > li:nth-child(6n) {
+      margin-right: 0; }
+  .kss-modifier__example .mq-layout1 li {
+    border: 1px solid black; }
+  @media screen and (max-width: 768px) {
+    .kss-modifier__example .mq-layout1 {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .kss-modifier__example .mq-layout1::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .kss-modifier__example .mq-layout1 > li {
+        float: left;
+        display: block;
+        margin-right: 16.03631%;
+        width: 41.98184%; }
+        .kss-modifier__example .mq-layout1 > li:last-child {
+          margin-right: 0; }
+        .kss-modifier__example .mq-layout1 > li:nth-child(2n) {
+          margin-right: 0; } }
+  @media screen and (max-width: 600px) {
+    .kss-modifier__example .mq-layout1 {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      .kss-modifier__example .mq-layout1::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .kss-modifier__example .mq-layout1 > li {
+        float: left;
+        display: block;
+        margin-right: 38.19821%;
+        width: 100%; }
+        .kss-modifier__example .mq-layout1 > li:last-child {
+          margin-right: 0; }
+        .kss-modifier__example .mq-layout1 > li:nth-child(1n) {
+          margin-right: 0; } }
+.kss-modifier__example .imgtest nav li {
+  margin-right: 1em;
+  display: inline-block; }
+.kss-modifier__example .imgtest footer {
+  background-color: #D1EBFF;
+  color: #3f474d; }
+.kss-modifier__example .imgtest main {
+  height: 25em;
+  margin: 1em 0; }
+.kss-modifier__example .galaxy1 main {
+  background-image: url(styleguide/public/assets/galaxy1.jpg); }
+.kss-modifier__example .galaxy2 main {
+  background-image: url(styleguide/public/assets/galaxy2.jpg); }
+.kss-modifier__example .ship1 main {
+  background-image: url(styleguide/public/assets/ship1.jpg); }
+.kss-modifier__example .ship2 main {
+  background-image: url(styleguide/public/assets/ship2.jpg); }
 
 /*# sourceMappingURL=index.css.map */

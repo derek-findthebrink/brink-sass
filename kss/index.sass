@@ -6,12 +6,15 @@ $animation-speed: 0.5s
 .kss-sidebar
 	position: fixed
 	max-height: 100vh
-	overflow: scroll
+	overflow: hidden
 
 @media (max-width: 768px)
 	.kss-sidebar
 		position: static
 		overflow: auto
+
+#kss-node .kss-section
+	max-width: none !important
 
 
 .kss-modifier__example
@@ -54,12 +57,49 @@ $animation-speed: 0.5s
 	.button-themed
 		@include button-themed
 
+	
 	// layouts
-	.grid-spaced
-		@include grid-spaced(li, 3)
+	.grid
+		@include grid(li, 3)
 
 
 	.grid-table
 		@include grid-table(ul, li)
 	.grid-table-noPad
 		@include grid-table(ul, li, 0)
+
+
+	// state
+	// media queries
+	.mq-layout1
+		@include grid(li, 6)
+		text-align: center
+		li 
+			border: 1px solid black
+		@include layoutBP()
+			@include grid(li, 2)
+		@include layoutBP(600px)
+			@include grid(li, 1)
+
+	// images
+	.imgtest
+		nav 
+			@include nav-horizontal
+		footer 
+			@include ac($color-primary)
+		main 
+			height: 25em
+			margin: 1em 0
+
+	.galaxy1
+		main 
+			@include perfect-background("styleguide/public/assets/galaxy1.jpg")
+	.galaxy2
+		main 
+			@include perfect-background("styleguide/public/assets/galaxy2.jpg")
+	.ship1
+		main 
+			@include perfect-background("styleguide/public/assets/ship1.jpg")
+	.ship2
+		main 
+			@include perfect-background("styleguide/public/assets/ship2.jpg")

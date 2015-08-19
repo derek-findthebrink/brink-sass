@@ -1,0 +1,65 @@
+// layouts
+//
+// layout breakpoints
+//
+// .mq-layout1	- breakpoints at 768px, 
+//
+// Markup: markup/media-queries.html
+// 
+// Styleguide media-queries.bp-layout
+
+// @mixin layoutBP
+//
+// media query creator for modifying layouts
+//
+// $point	- point (unit of measurement, usually px) at which to break on specified feature, defaults to 768px
+// $type	- feature upon which to break viewport at, defaults to max-width
+// @content		- expressions to evaluate at breakpoint
+// 
+// Styleguide media-queries.bp-layout.layoutBP
+
+// if used multiple times in same blok, will variable lose it's value? shouldn't...
+@mixin layoutBP($point: 768px, $type: max-width)
+	$bp: new-breakpoint($type $point)
+	@include media($bp)
+		@content
+
+// images
+//
+// image media queries
+//
+// .galaxy1	- creates perfect background media queries -> no whitespace visible ever!
+// .galaxy2	- creates perfect background media queries -> no whitespace visible ever!
+// .ship1	- creates perfect background media queries -> no whitespace visible ever!
+// .ship2	- creates perfect background media queries -> no whitespace visible ever!
+//
+// Markup: markup/mq-images.html
+// 
+// Styleguide media-queries.images
+
+// @mixin perfect-background
+//
+// automaticall covers background. Do not use on html or body tags if including ms filters
+//
+// $src		- image source, just the string no url('') business
+// $ms 		- use if targetting lower end ms browsers -> do not use if image is on html or body. defaults to false
+// 
+// Styleguide media-queries.images.perfect-background
+// @mixin perfect-background($width, $height, $container-width, $container-height)
+// 	$ratio: ($width / $height)
+// 	@debug $ratio
+
+%defaults-perfect-background
+	background-repeat: no-repeat
+	background-position: center center
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+@mixin perfect-background($src, $ms: false)
+	@if $ms
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$src}, sizingMethod='scale')
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=#{$src}, sizingMethod='scale')"
+	@extend %defaults-perfect-background
+	background-image: url(#{$src})

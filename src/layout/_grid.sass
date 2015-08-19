@@ -2,25 +2,23 @@
 //
 // grid layouts
 //
-// .grid-spaced	- basic grid
+// .grid	- basic grid
 // 
 // Markup: markup/grid.html
 // 
 // Styleguide Layout.grid
 
 
-// @mixin grid-spaced
+// @mixin grid
 //
 // sets the element to display children in a grid format - no media queries are included by default
 //
 // $col	- number of columns the grid should have. defaults to $grid-col-default
 // $max-width	- max width of the parent. defaults to 100%
 // 
-// Styleguide Layout.grid.grid-spaced
+// Styleguide Layout.grid.grid
 
-$grid-col-default: 4 !default
-
-@mixin grid-spaced($child-el: li, $col: $grid-col-default, $max-width: 100%)
+@mixin grid($child-el: li, $col: $grid-col-default, $max-width: 100%)
 	// mobile breakpoint - will display each unit across entire display
 	// should be reconsidered!!
 	@include outer-container($max-width)

@@ -65,26 +65,26 @@
           <span class="kss-nav__ref">6</span
           ><span class="kss-nav__name">Layout</span>
         </a>
-        <ul class="kss-nav__menu-child">
-            <li class="kss-nav__menu-item">
-              <a href="section-layout.html#kssref-layout-grid">
-                <span class="kss-nav__ref">6.1</span
-                ><span class="kss-nav__name">grid</span>
-              </a>
-            </li>
-            <li class="kss-nav__menu-item">
-              <a href="section-layout.html#kssref-layout-grid-tables">
-                <span class="kss-nav__ref">6.2</span
-                ><span class="kss-nav__name">grid-tables</span>
-              </a>
-            </li>
-        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-media-queries.html">
           <span class="kss-nav__ref">7</span
           ><span class="kss-nav__name">Media Queries</span>
         </a>
+        <ul class="kss-nav__menu-child">
+            <li class="kss-nav__menu-item">
+              <a href="section-media-queries.html#kssref-media-queries-bp-layout">
+                <span class="kss-nav__ref">7.1</span
+                ><span class="kss-nav__name">layouts</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-media-queries.html#kssref-media-queries-images">
+                <span class="kss-nav__ref">7.2</span
+                ><span class="kss-nav__name">images</span>
+              </a>
+            </li>
+        </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a href="section-modules.html">
@@ -97,40 +97,40 @@
 </div>
 <article role="main" class="kss-main">
 
-      <div     id="kssref-layout" class="kss-section kss-section--depth-1">
+      <div     id="kssref-media-queries" class="kss-section kss-section--depth-1">
 
     <div class="kss-style">
       <h1 class="kss-title kss-title--level-1">
-        <a class="kss-title__permalink" href="#kssref-layout">
-          <span class="kss-title__ref">6</span
-          >Layout
+        <a class="kss-title__permalink" href="#kssref-media-queries">
+          <span class="kss-title__ref">7</span
+          >Media Queries
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h1>
 
 
       <div class="kss-description">
-        <p>defines layout styles</p>
+        <p>Making media queries easier to implement</p>
 
       </div>
     </div>
 
 
       </div>
-      <section id="kssref-layout-grid" class="kss-section kss-section--depth-2">
+      <section id="kssref-media-queries-bp-layout" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-layout-grid">
-          <span class="kss-title__ref">6.1</span
-          >grid
+        <a class="kss-title__permalink" href="#kssref-media-queries-bp-layout">
+          <span class="kss-title__ref">7.1</span
+          >layouts
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>grid layouts</p>
+        <p>layout breakpoints</p>
 
       </div>
     </div>
@@ -143,16 +143,7 @@
           Default styling
         </div>
         <div class="kss-modifier__example">
-          <style>
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-</style> 
-<ul class="border [modifier class]">
-	<li>herp</li>
-	<li>herp</li>
-	<li>herp</li>
+          <ul class="[modifier class]">
 	<li>herp</li>
 	<li>herp</li>
 	<li>herp</li>
@@ -163,22 +154,13 @@
 
         </div>
         <div class="kss-modifier__name kss-style">
-          .grid
+          .mq-layout1
         </div>
         <div class="kss-modifier__description kss-style">
-          basic grid
+          breakpoints at 768px,
         </div>
         <div class="kss-modifier__example">
-          <style>
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-</style> 
-<ul class="border grid">
-	<li>herp</li>
-	<li>herp</li>
-	<li>herp</li>
+          <ul class="mq-layout1">
 	<li>herp</li>
 	<li>herp</li>
 	<li>herp</li>
@@ -191,16 +173,7 @@
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;style&gt;
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-&lt;/style&gt; 
-&lt;ul class=&quot;border [modifier class]&quot;&gt;
-	&lt;li&gt;herp&lt;/li&gt;
-	&lt;li&gt;herp&lt;/li&gt;
-	&lt;li&gt;herp&lt;/li&gt;
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;ul class=&quot;[modifier class]&quot;&gt;
 	&lt;li&gt;herp&lt;/li&gt;
 	&lt;li&gt;herp&lt;/li&gt;
 	&lt;li&gt;herp&lt;/li&gt;
@@ -212,50 +185,54 @@
       </div>
 
       </section>
-      <section id="kssref-layout-grid.grid" class="kss-section kss-section--depth-3">
+      <section id="kssref-media-queries-bp-layout.layoutbp" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-layout-grid.grid">
-          <span class="kss-title__ref">6.1.1</span
-          >@mixin grid
+        <a class="kss-title__permalink" href="#kssref-media-queries-bp-layout.layoutbp">
+          <span class="kss-title__ref">7.1.1</span
+          >@mixin layoutBP
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h3>
 
       <ul class="kss-parameters">
         <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$col</code>
-          <div class="kss-parameters__description">number of columns the grid should have. defaults to $grid-col-default</div>
+          <code class="kss-parameters__name">$point</code>
+          <div class="kss-parameters__description">point (unit of measurement, usually px) at which to break on specified feature, defaults to 768px</div>
         </li>
         <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$max-width</code>
-          <div class="kss-parameters__description">max width of the parent. defaults to 100%</div>
+          <code class="kss-parameters__name">$type</code>
+          <div class="kss-parameters__description">feature upon which to break viewport at, defaults to max-width</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">@content</code>
+          <div class="kss-parameters__description">expressions to evaluate at breakpoint</div>
         </li>
       </ul>
 
       <div class="kss-description">
-        <p>sets the element to display children in a grid format - no media queries are included by default</p>
+        <p>media query creator for modifying layouts</p>
 
       </div>
     </div>
 
 
       </section>
-      <section id="kssref-layout-grid-tables" class="kss-section kss-section--depth-2">
+      <section id="kssref-media-queries-images" class="kss-section kss-section--depth-2">
 
     <div class="kss-style">
       <h2 class="kss-title kss-title--level-2">
-        <a class="kss-title__permalink" href="#kssref-layout-grid-tables">
-          <span class="kss-title__ref">6.2</span
-          >grid-tables
+        <a class="kss-title__permalink" href="#kssref-media-queries-images">
+          <span class="kss-title__ref">7.2</span
+          >images
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h2>
 
 
       <div class="kss-description">
-        <p>table grids, for tighter alignment of grid cells</p>
+        <p>image media queries</p>
 
       </div>
     </div>
@@ -268,166 +245,195 @@
           Default styling
         </div>
         <div class="kss-modifier__example">
-          <style>
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-	ul.border {
-		margin: 0;
-	}
-</style> 
-<div class="[modifier class]">
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>	
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>
+          <div class="imgtest [modifier class]">
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>nav item</li>
+			<li>nav item</li>
+			<li>nav item</li>
+		</ul>
+	</nav>
+	<main>
+		<div>
+			<h2>Content!</h2>
+			<p>some content!</p>
+		</div>
+	</main>
+	<footer>
+		<p>a footer!</p>
+	</footer>
 </div>
-
         </div>
         <div class="kss-modifier__name kss-style">
-          .grid-table
+          .galaxy1
         </div>
         <div class="kss-modifier__description kss-style">
-          tightly nested grid
+          creates perfect background media queries -&gt; no whitespace visible ever!
         </div>
         <div class="kss-modifier__example">
-          <style>
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-	ul.border {
-		margin: 0;
-	}
-</style> 
-<div class="grid-table">
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>	
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>
+          <div class="imgtest galaxy1">
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>nav item</li>
+			<li>nav item</li>
+			<li>nav item</li>
+		</ul>
+	</nav>
+	<main>
+		<div>
+			<h2>Content!</h2>
+			<p>some content!</p>
+		</div>
+	</main>
+	<footer>
+		<p>a footer!</p>
+	</footer>
 </div>
-
         </div>
         <div class="kss-modifier__name kss-style">
-          .grid-table-noPad
+          .galaxy2
         </div>
         <div class="kss-modifier__description kss-style">
-          no padding on grid cells
+          creates perfect background media queries -&gt; no whitespace visible ever!
         </div>
         <div class="kss-modifier__example">
-          <style>
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-	ul.border {
-		margin: 0;
-	}
-</style> 
-<div class="grid-table-noPad">
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>	
-	<ul class="border">
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-		<li>herp</li>
-	</ul>
+          <div class="imgtest galaxy2">
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>nav item</li>
+			<li>nav item</li>
+			<li>nav item</li>
+		</ul>
+	</nav>
+	<main>
+		<div>
+			<h2>Content!</h2>
+			<p>some content!</p>
+		</div>
+	</main>
+	<footer>
+		<p>a footer!</p>
+	</footer>
 </div>
-
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ship1
+        </div>
+        <div class="kss-modifier__description kss-style">
+          creates perfect background media queries -&gt; no whitespace visible ever!
+        </div>
+        <div class="kss-modifier__example">
+          <div class="imgtest ship1">
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>nav item</li>
+			<li>nav item</li>
+			<li>nav item</li>
+		</ul>
+	</nav>
+	<main>
+		<div>
+			<h2>Content!</h2>
+			<p>some content!</p>
+		</div>
+	</main>
+	<footer>
+		<p>a footer!</p>
+	</footer>
+</div>
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .ship2
+        </div>
+        <div class="kss-modifier__description kss-style">
+          creates perfect background media queries -&gt; no whitespace visible ever!
+        </div>
+        <div class="kss-modifier__example">
+          <div class="imgtest ship2">
+	<header>
+		<h1>Header</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>nav item</li>
+			<li>nav item</li>
+			<li>nav item</li>
+		</ul>
+	</nav>
+	<main>
+		<div>
+			<h2>Content!</h2>
+			<p>some content!</p>
+		</div>
+	</main>
+	<footer>
+		<p>a footer!</p>
+	</footer>
+</div>
         </div>
       </div>
 
       <div class="kss-markup kss-style">
-        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;style&gt;
-	.border li {
-		border: 1px solid black;
-		text-align: center;
-	}
-	ul.border {
-		margin: 0;
-	}
-&lt;/style&gt; 
-&lt;div class=&quot;[modifier class]&quot;&gt;
-	&lt;ul class=&quot;border&quot;&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-	&lt;/ul&gt;	
-	&lt;ul class=&quot;border&quot;&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-		&lt;li&gt;herp&lt;/li&gt;
-	&lt;/ul&gt;
-&lt;/div&gt;
-</code></pre>
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class=&quot;imgtest [modifier class]&quot;&gt;
+	&lt;header&gt;
+		&lt;h1&gt;Header&lt;/h1&gt;
+	&lt;/header&gt;
+	&lt;nav&gt;
+		&lt;ul&gt;
+			&lt;li&gt;nav item&lt;/li&gt;
+			&lt;li&gt;nav item&lt;/li&gt;
+			&lt;li&gt;nav item&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	&lt;main&gt;
+		&lt;div&gt;
+			&lt;h2&gt;Content!&lt;/h2&gt;
+			&lt;p&gt;some content!&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/main&gt;
+	&lt;footer&gt;
+		&lt;p&gt;a footer!&lt;/p&gt;
+	&lt;/footer&gt;
+&lt;/div&gt;</code></pre>
       </div>
 
       </section>
-      <section id="kssref-layout-grid-tables.grid-table" class="kss-section kss-section--depth-3">
+      <section id="kssref-media-queries-images.perfect-background%20@mixin%20perfect-background($width,%20$height,%20$container-width,%20$container-height)%20$ratio:%20($width%20/%20$height)%20@debug%20$ratio" class="kss-section kss-section--depth-3">
 
     <div class="kss-style">
       <h3 class="kss-title kss-title--level-3">
-        <a class="kss-title__permalink" href="#kssref-layout-grid-tables.grid-table">
-          <span class="kss-title__ref">6.2.1</span
-          >@mixin grid-table
+        <a class="kss-title__permalink" href="#kssref-media-queries-images.perfect-background%20@mixin%20perfect-background($width,%20$height,%20$container-width,%20$container-height)%20$ratio:%20($width%20/%20$height)%20@debug%20$ratio">
+          <span class="kss-title__ref">7.2.1</span
+          >@mixin perfect-background
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h3>
 
       <ul class="kss-parameters">
         <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$row-el</code>
-          <div class="kss-parameters__description">the element selected to function as a row, defaults to ul</div>
+          <code class="kss-parameters__name">$src</code>
+          <div class="kss-parameters__description">image source, just the string no url(&#39;&#39;) business</div>
         </li>
         <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$cells-el</code>
-          <div class="kss-parameters__description">the element selected to function as a cell within a row, defaults to li</div>
-        </li>
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$pad</code>
-          <div class="kss-parameters__description">internal padding to include on each cell, defaults to flex-gutter()</div>
-        </li>
-        <li class="kss-parameters__item">
-          <code class="kss-parameters__name">$max-width</code>
-          <div class="kss-parameters__description">the maximum width of the table, defaults to 100%</div>
+          <code class="kss-parameters__name">$ms</code>
+          <div class="kss-parameters__description">use if targetting lower end ms browsers -&gt; do not use if image is on html or body. defaults to false</div>
         </li>
       </ul>
 
       <div class="kss-description">
-        <p>grid with no spaces between cells. each cell will line up side by side within row, each
-equally spaced</p>
+        <p>automaticall covers background. Do not use on html or body tags if including ms filters</p>
 
       </div>
     </div>
