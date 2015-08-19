@@ -1,6 +1,6 @@
 {
   "name": "brink-sass",
-  "version": "0.1.17",
+  "version": "0.2.0",
   "description": "sass functional implementation by brink technology co.",
   "main": "./index.sass",
   "directories": {
