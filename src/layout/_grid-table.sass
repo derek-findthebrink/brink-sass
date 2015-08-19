@@ -1,0 +1,34 @@
+// grid-tables
+//
+// table grids, for tighter alignment of grid cells
+//
+// .grid-table	- tightly nested grid
+// .grid-table-noPad	- no padding on grid cells
+//
+// Markup: markup/grid-table.html
+// 
+// Styleguide Layout.grid-tables
+
+
+// @mixin grid-table
+//
+// grid with no spaces between cells. each cell will line up side by side within row, each
+// equally spaced
+//
+// $row-el	- the element selected to function as a row, defaults to ul
+// $cells-el	- the element selected to function as a cell within a row, defaults to li
+// $pad			- internal padding to include on each cell, defaults to flex-gutter()
+// $max-width 	- the maximum width of the table, defaults to 100%
+//
+// Styleguide Layout.grid-tables.grid-table
+
+@mixin grid-table($row-el: ul, $cells-el: li, $pad: flex-gutter(), $max-width: 100%)
+	@include outer-container($max-width)
+	& > #{$row-el}
+		@include fill-parent()
+		@include row(table)
+		& > #{$cells-el}
+			@include span-columns(1)
+			@include pad($pad)
+			&:last-child
+				@include reset-display

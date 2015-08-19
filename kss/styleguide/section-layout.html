@@ -69,7 +69,13 @@
             <li class="kss-nav__menu-item">
               <a href="section-layout.html#kssref-layout-grid">
                 <span class="kss-nav__ref">6.1</span
-                ><span class="kss-nav__name">@mixin grid</span>
+                ><span class="kss-nav__name">grid</span>
+              </a>
+            </li>
+            <li class="kss-nav__menu-item">
+              <a href="section-layout.html#kssref-layout-grid-tables">
+                <span class="kss-nav__ref">6.2</span
+                ><span class="kss-nav__name">grid-tables</span>
               </a>
             </li>
         </ul>
@@ -111,10 +117,105 @@
       <h2 class="kss-title kss-title--level-2">
         <a class="kss-title__permalink" href="#kssref-layout-grid">
           <span class="kss-title__ref">6.1</span
-          >@mixin grid
+          >grid
           <span class="kss-title__permalink-hash">#permalink</span>
         </a>
       </h2>
+
+
+      <div class="kss-description">
+        <p>grid layouts</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <style>
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+</style> 
+<ul class="grid [modifier class]">
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+</ul>
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-spaced
+        </div>
+        <div class="kss-modifier__description kss-style">
+          basic grid
+        </div>
+        <div class="kss-modifier__example">
+          <style>
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+</style> 
+<ul class="grid grid-spaced">
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+	<li>herp</li>
+</ul>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;style&gt;
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+&lt;/style&gt; 
+&lt;ul class=&quot;grid [modifier class]&quot;&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+	&lt;li&gt;herp&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-layout-grid.grid-spaced" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-layout-grid.grid-spaced">
+          <span class="kss-title__ref">6.1.1</span
+          >@mixin grid-spaced
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
 
       <ul class="kss-parameters">
         <li class="kss-parameters__item">
@@ -128,7 +229,231 @@
       </ul>
 
       <div class="kss-description">
-        <p>sets the element to display children in a grid format</p>
+        <p>sets the element to display children in a grid format - no media queries are included by default</p>
+
+      </div>
+    </div>
+
+
+      </section>
+      <section id="kssref-layout-grid-tables" class="kss-section kss-section--depth-2">
+
+    <div class="kss-style">
+      <h2 class="kss-title kss-title--level-2">
+        <a class="kss-title__permalink" href="#kssref-layout-grid-tables">
+          <span class="kss-title__ref">6.2</span
+          >grid-tables
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h2>
+
+
+      <div class="kss-description">
+        <p>table grids, for tighter alignment of grid cells</p>
+
+      </div>
+    </div>
+
+      <div class="kss-modifier__wrapper">
+        <div class="kss-modifier__heading kss-style">
+          Examples
+        </div>
+        <div class="kss-modifier__default-name kss-style">
+          Default styling
+        </div>
+        <div class="kss-modifier__example">
+          <style>
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+	ul.grid {
+		margin: 0;
+	}
+</style> 
+<div class="[modifier class]">
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>	
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>
+</div>
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-table
+        </div>
+        <div class="kss-modifier__description kss-style">
+          tightly nested grid
+        </div>
+        <div class="kss-modifier__example">
+          <style>
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+	ul.grid {
+		margin: 0;
+	}
+</style> 
+<div class="grid-table">
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>	
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>
+</div>
+
+        </div>
+        <div class="kss-modifier__name kss-style">
+          .grid-table-noPad
+        </div>
+        <div class="kss-modifier__description kss-style">
+          no padding on grid cells
+        </div>
+        <div class="kss-modifier__example">
+          <style>
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+	ul.grid {
+		margin: 0;
+	}
+</style> 
+<div class="grid-table-noPad">
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>	
+	<ul class="grid">
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+		<li>herp</li>
+	</ul>
+</div>
+
+        </div>
+      </div>
+
+      <div class="kss-markup kss-style">
+        <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;style&gt;
+	.grid li {
+		border: 1px solid black;
+		text-align: center;
+	}
+	ul.grid {
+		margin: 0;
+	}
+&lt;/style&gt; 
+&lt;div class=&quot;[modifier class]&quot;&gt;
+	&lt;ul class=&quot;grid&quot;&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+	&lt;/ul&gt;	
+	&lt;ul class=&quot;grid&quot;&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+		&lt;li&gt;herp&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+      </section>
+      <section id="kssref-layout-grid-tables.grid-table" class="kss-section kss-section--depth-3">
+
+    <div class="kss-style">
+      <h3 class="kss-title kss-title--level-3">
+        <a class="kss-title__permalink" href="#kssref-layout-grid-tables.grid-table">
+          <span class="kss-title__ref">6.2.1</span
+          >@mixin grid-table
+          <span class="kss-title__permalink-hash">#permalink</span>
+        </a>
+      </h3>
+
+      <ul class="kss-parameters">
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$row-el</code>
+          <div class="kss-parameters__description">the element selected to function as a row, defaults to ul</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$cells-el</code>
+          <div class="kss-parameters__description">the element selected to function as a cell within a row, defaults to li</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$pad</code>
+          <div class="kss-parameters__description">internal padding to include on each cell, defaults to flex-gutter()</div>
+        </li>
+        <li class="kss-parameters__item">
+          <code class="kss-parameters__name">$max-width</code>
+          <div class="kss-parameters__description">the maximum width of the table, defaults to 100%</div>
+        </li>
+      </ul>
+
+      <div class="kss-description">
+        <p>grid with no spaces between cells. each cell will line up side by side within row, each
+equally spaced</p>
 
       </div>
     </div>

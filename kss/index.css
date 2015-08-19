@@ -629,7 +629,7 @@ form {
     clear: both;
     content: "";
     display: table; }
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     .kss-modifier__example header, .kss-modifier__example .is-header-collapsed {
       overflow: hidden; } }
   .kss-modifier__example header .logo, .kss-modifier__example .is-header-collapsed .logo {
@@ -644,7 +644,7 @@ form {
     background-repeat: no-repeat; }
     .kss-modifier__example header .logo:last-child, .kss-modifier__example .is-header-collapsed .logo:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
       .kss-modifier__example header .logo, .kss-modifier__example .is-header-collapsed .logo {
         float: left;
         display: block;
@@ -664,7 +664,7 @@ form {
     text-align: center; }
     .kss-modifier__example header h1:last-child, .kss-modifier__example .is-header-collapsed h1:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
       .kss-modifier__example header h1, .kss-modifier__example .is-header-collapsed h1 {
         float: left;
         display: block;
@@ -682,7 +682,7 @@ form {
     text-align: right; }
     .kss-modifier__example header .location:last-child, .kss-modifier__example .is-header-collapsed .location:last-child {
       margin-right: 0; }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
       .kss-modifier__example header .location, .kss-modifier__example .is-header-collapsed .location {
         float: left;
         display: block;
@@ -784,15 +784,15 @@ form {
     transition: all, 0.5s;
     border: 1px solid rgba(66, 101, 127, 0.2);
     border-radius: 3px;
-    background-color: cm(#42657F, 8);
-    background-image: -webkit-linear-gradient(top, cm(#42657F, 8), #42657F);
-    background-image: linear-gradient(to bottom,cm(#42657F, 8), #42657F);
+    background-color: #b3c1cc;
+    background-image: -webkit-linear-gradient(top, #b3c1cc, #42657F);
+    background-image: linear-gradient(to bottom,#b3c1cc, #42657F);
     padding: 0.5em;
     color: #D1EBFF; }
     .kss-modifier__example .form-pretty input[type='submit']:hover {
       border-color: #42657F; }
     .kss-modifier__example .form-pretty input[type='submit']:hover {
-      color: cm(#D1EBFF, 10); }
+      color: white; }
 .kss-modifier__example .form-send {
   max-height: 5em;
   background-color: #D1EBFF; }
@@ -827,11 +827,62 @@ form {
 .kss-modifier__example .button-themed {
   border: 1px solid rgba(66, 101, 127, 0.2);
   border-radius: 3px;
-  background-color: cm(#D1EBFF, 8);
-  background-image: -webkit-linear-gradient(top, cm(#D1EBFF, 8), #D1EBFF);
-  background-image: linear-gradient(to bottom,cm(#D1EBFF, 8), #D1EBFF);
+  background-color: #edf7ff;
+  background-image: -webkit-linear-gradient(top, #edf7ff, #D1EBFF);
+  background-image: linear-gradient(to bottom,#edf7ff, #D1EBFF);
   padding: 0.5em; }
   .kss-modifier__example .button-themed:hover {
     border-color: #42657F; }
+.kss-modifier__example .grid-spaced {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .kss-modifier__example .grid-spaced::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .kss-modifier__example .grid-spaced > li {
+    float: left;
+    display: block;
+    margin-right: 10.1484%;
+    width: 26.56773%; }
+    .kss-modifier__example .grid-spaced > li:last-child {
+      margin-right: 0; }
+    .kss-modifier__example .grid-spaced > li:nth-child(3n) {
+      margin-right: 0; }
+.kss-modifier__example .grid-table {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .kss-modifier__example .grid-table::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .kss-modifier__example .grid-table > ul {
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .kss-modifier__example .grid-table > ul > li {
+      display: table-cell;
+      width: 8.33333%;
+      padding: 2.35765%; }
+.kss-modifier__example .grid-table-noPad {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .kss-modifier__example .grid-table-noPad::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .kss-modifier__example .grid-table-noPad > ul {
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed; }
+    .kss-modifier__example .grid-table-noPad > ul > li {
+      display: table-cell;
+      width: 8.33333%;
+      padding: 0; }
 
 /*# sourceMappingURL=index.css.map */

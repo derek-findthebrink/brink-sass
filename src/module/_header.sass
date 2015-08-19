@@ -9,6 +9,8 @@
 //
 // Styleguide Modules.header
 
+
+
 // @mixin header
 //
 // default setup for header. Assumes that .location has a
@@ -22,11 +24,12 @@
 
 
 @mixin header($logo: $logo-img, $size: $logo-size, $margin: $logo-margin)
+	$mobile: new-breakpoint(768px)
 	@include ac($color-primary)
 	@include outer-container
+	@include fill-parent
 	@include media($mobile)
 		overflow: hidden
-	width: 100%
 	min-height: $logo-size + 2 * $margin
 	.logo
 		@include span-columns(4 of 12)
@@ -75,3 +78,12 @@
 		margin-left: 0
 		margin-right: 0
 		background-position: center
+
+// @mixin header-nav-logo
+//
+// creates a header with only nav and logo
+//
+// $param	- description
+// 
+// Styleguide Modules.header.header-nav-logo
+@mixin header-nav-logo

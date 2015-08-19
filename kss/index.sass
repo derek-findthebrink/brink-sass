@@ -53,3 +53,13 @@ $animation-speed: 0.5s
 		@include button
 	.button-themed
 		@include button-themed
+
+	// layouts
+	.grid-spaced
+		@include grid-spaced(li, 3)
+
+
+	.grid-table
+		@include grid-table(ul, li)
+	.grid-table-noPad
+		@include grid-table(ul, li, 0)
